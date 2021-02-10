@@ -15,6 +15,7 @@ const App = () => {
     setCamposFormulario({
       nombre: event.currentTarget.nombre.value,
       apellido: event.currentTarget.apellido.value,
+      mensaje: event.currentTarget.mensaje.value
     })
   }
 
@@ -36,9 +37,8 @@ const App = () => {
             Elegiste Presencial       
             <hr />
             <h2>Mensaje</h2>
-            hola
+            { camposFormulario.mensaje }
           </div>
-          
         ) : (
           <div className="contenedor">
             <h1>Aprendiendo PHP</h1>
